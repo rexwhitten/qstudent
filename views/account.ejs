@@ -1,0 +1,12 @@
+<% layout('layout') -%>
+<p>Username: <%= user.username %></p>
+<p>Email: <%= user.email %></p>
+<p>
+	<img src="qr"/>
+</p>
+	<ul>
+	<% for (var ul in links) { %> 
+		<li><a href="#"> <%= links[ul].title %></a></li>
+	<% } %>
+	</ul>
+
