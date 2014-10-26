@@ -1,12 +1,27 @@
 <% layout('layout') -%>
-<p>Username: <%= user.username %></p>
-<p>Email: <%= user.email %></p>
-<p>
-	<img src="qr"/>
-</p>
-	<ul>
+
+
+
+<div class="row">
+
+<div clas="col-lg-3">
+	<p>Username: <%= user.username %></p>
+	<p>Email: <%= user.email %></p>
+</div>
+
+<div class="col-lg-3">
+	<p>
+		<img src="qr"/>
+	</p>
+</div>
+
+<div class="col-lg-3">
+	<ul class="list-item">
 	<% for (var ul in links) { %> 
 		<li><a href="#"> <%= links[ul].title %></a></li>
 	<% } %>
 	</ul>
+</div>
+
+</div>
 
